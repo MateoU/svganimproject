@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="svganim.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>SVG Animation</title>
+  </head>
+  <body>
+      <h1 id="solar_system">SOLAR SYSTEM</h1>
+    <svg width="100%" viewBox="0 0 1078 500" style="background-color: #000C29">
+
+      <circle id="sun" cx="539" cy="250" r="25" fill="#FFB200"/>
+
+      <ellipse cx="539" cy="250" rx="70" ry="35" fill="none" stroke="white"/>
+      <path id="mercuryOrbit" d="M 539, 250 m -35, 0 a 35,35 0 1,0 70,0 a 35,35 0 1,0 -70,0" fill="none"/>
+      <circle id="mercury" cx="0" cy="0" r="3" fill="#654600">
+        <animateMotion dur=".88s" repeatCount="indefinite">
+          <mpath xlink:href="#mercuryOrbit"/>
+        </animateMotion>
+      </circle>
+
+      <ellipse cx="539" cy="250" rx="100" ry="50" fill="none" stroke="white"/>
+      <path id="venusOrbit" d="M 539, 250 m -50, 0 a 50,50 0 1,0 100,0 a 50,50 0 1,0 -100,0" fill="none"/>
+      <circle id="venus" cx="0" cy="0" r="4" fill="#F1B836">
+        <animateMotion dur="2.25s" repeatCount="indefinite">
+          <mpath xlink:href="#venusOrbit"/>
+        </animateMotion>
+      </circle>
+
+      <ellipse cx="539" cy="250" rx="140" ry="70" fill="none" stroke="white"/>
+      <path id="earthOrbit" d="M 539, 250 m -70, 0 a 70,70 0 1,0 140,0 a 70,70 0 1,0 -140,0" fill="none"/>
+      <circle id="earth" cx="0" cy="0" r="4" fill="#005598">
+        <animateMotion dur="3.65s" repeatCount="indefinite">
+        <mpath xlink:href="#earthOrbit"/>
+        </animateMotion>
+      </circle>
+
+      <ellipse cx="539" cy="250" rx="170" ry="85" fill="none" stroke="white"/>
+      <path id="marsOrbit" d="M 539, 250 m -85, 0 a 85,85 0 1,0 170,0 a 85,85 0 1,0 -170,0" fill="none"/>
+      <circle id="mars" cx="0" cy="0" r="3" fill="#FF540F">
+        <animateMotion dur="6.87s" repeatCount="indefinite">
+        <mpath xlink:href="#marsOrbit"/>
+        </animateMotion>
+      </circle>
+
+      <ellipse cx="539" cy="250" rx="250" ry="125" fill="none" stroke="white"/>
+      <path id="jupiterOrbit" d="M 539, 250 m -125, 0 a 125,125 0 1,0 250,0 a 125,125 0 1,0 -250,0" fill="none"/>
+      <circle id="jupiter" cx="0" cy="0" r="15" fill="#ECBA4E">
+        <animateMotion dur="43.8s" repeatCount="indefinite">
+        <mpath xlink:href="#jupiterOrbit"/>
+        </animateMotion>
+      </circle>
+
+      <ellipse cx="539" cy="250" rx="330" ry="165" fill="none" stroke="white"/>
+      <path id="saturnOrbit" d="M 539, 250 m -165, 0 a 165,165 0 1,0 330,0 a 165,165 0 1,0 -330,0" fill="none"/>
+      <circle id="saturn" cx="0" cy="0" r="12" fill="#E8D58C">
+        <animateMotion dur="105.85s" repeatCount="indefinite">
+        <mpath xlink:href="#saturnOrbit"/>
+        </animateMotion>
+      </circle>
+      <circle id="saturnRings" cx="0" cy="0" r="16" fill="none" stroke="white" stroke-width="2">
+        <animateMotion dur="105.85s" repeatCount="indefinite">
+          <mpath xlink:href="#saturnOrbit"/>
+        </animateMotion>
+      </circle>
+
+      <ellipse cx="539" cy="250" rx="400" ry="200" fill="none" stroke="white"/>
+      <path id="uranusOrbit" d="M 539, 250 m -200, 0 a 200,200 0 1,0 400,0 a 200,200 0 1,0 -400,0" fill="none"/>
+      <circle id="uranus" cx="0" cy="0" r="9" fill="#79D5B8">
+        <animateMotion dur="306.6s" repeatCount="indefinite">
+        <mpath xlink:href="#uranusOrbit"/>
+        </animateMotion>
+      </circle>
+
+      <ellipse cx="539" cy="250" rx="470" ry="235" fill="none" stroke="white"/>
+      <path id="neptuneOrbit" d="M 539, 250 m -235, 0 a 235,235 0 1,0 470,0 a 235,235 0 1,0 -470,0" fill="none"/>
+      <circle id="neputune" cx="0" cy="0" r="9" fill="#0056C4">
+        <animateMotion dur="602.25s" repeatCount="indefinite">
+        <mpath xlink:href="#neptuneOrbit"/>
+        </animateMotion>
+      </circle>
+
+    </svg>
+  </body>
+</html>

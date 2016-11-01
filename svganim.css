@@ -1,0 +1,20 @@
+html {
+  background-color: #000C29;
+  font-family: 'Open Sans', sans-serif;
+}
+
+svg {
+  margin: 0;
+
+}
+
+body {
+  margin: 0;
+}
+
+#solar_system {
+    color: white;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    font-weight: 100;
+}
