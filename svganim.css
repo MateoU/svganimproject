@@ -1,15 +1,14 @@
 html {
-  background-color: #000C29;
-  font-family: 'Open Sans', sans-serif;
+    background-color: #010213;
+    font-family: 'Open Sans', sans-serif;
 }
 
 svg {
-  margin: 0;
-
+    margin: 0;
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
 #solar_system {
@@ -17,4 +16,19 @@ body {
     word-spacing: 10px;
     letter-spacing: 10px;
     font-weight: 100;
+}
+
+#introPar {
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 0.7em;
+    margin-bottom: 40px;
+}
+
+.thingText {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
 }
